@@ -41,6 +41,7 @@ header {
   color: black;
   padding: 10px;
   margin-top: 20px;
+  width: 50%;
 }
 
 .ImageContainer {
@@ -83,20 +84,35 @@ nav a:hover {
   color: black;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   header {
     flex-direction: column;
     text-align: center;
+    gap: 5%;
+    padding: 15px;
   }
   .title {
     font-size: 8vmin;
-    text-align: left;
+    text-align: center;
+    
     order: 1;
+  
+  }
+  .title h1{
+    border-radius: 13px;
+    width: 130%;
+  }
+  .title h2{
+    width: 100%;
+    border-radius: 13px;
   }
   .ImageContainer {
     width: 100%;
+    border-radius: 13px;
     order: 2;
     justify-content: center;
+    margin-top: 10px;
+    padding-right: 10px;
   }
   nav {
     flex-direction: column;
