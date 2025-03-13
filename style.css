@@ -86,32 +86,41 @@ nav a:hover {
 
 @media screen and (max-width: 600px) {
   header {
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centers the content vertically */
     text-align: center;
-    gap: 5%;
+    gap: 5px;
     padding: 15px;
+    height: 100vh; /* Ensures the header takes the full height of the screen */
   }
   .title {
     font-size: 8vmin;
     text-align: center;
-    
     order: 1;
-  
-  }
-  .title h1{
-    border-radius: 13px;
-    width: 130%;
-  }
-  .title h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
+    margin: 0; /* Remove any margin that could disrupt centering */
+  }
+  .title h1 {
     border-radius: 13px;
+    width: 50%;
+    text-align: center; /* Ensures text is centered inside the h1 */
+  }
+  .title h2 {
+    font-size: 4vmin;
+    width: 30%;
+    border-radius: 13px;
+    text-align: center; /* Ensures text is centered inside the h2 */
   }
   .ImageContainer {
     width: 100%;
     border-radius: 13px;
     order: 2;
     justify-content: center;
-    margin-top: 10px;
     padding-right: 10px;
   }
   nav {
@@ -122,3 +131,4 @@ nav a:hover {
     width: 100%;
   }
 }
+
