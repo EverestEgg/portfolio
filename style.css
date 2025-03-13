@@ -4,96 +4,105 @@
 }
 
 header {
-  position: relative;
   display: flex;
-  top: 100%;
-  height: 100%;
-  padding: 20%;
-  align-content: center;
-  text-align: left; /* center the text */
-  background: #1c1a1d; /* green background */
-  color: white; /* white text color */
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 90vh;
+  text-align: left;
+  background: #1c1a1d;
+  color: white;
+  gap: 20vh;
+
 }
 
 .title {
-  position: absolute;
-  left: 0%;
-  bottom: 50%;
-  max-width: 45%;
-  min-width: 20%;
-  display: flexbox;
-  padding: 20px;
+  flex-direction: column;
+  font-size: 10vmin;
+  z-index: 10;
+  text-align: left;
+  flex: 1;
+  margin-left: 0;
 
+}
+.title h1{
   background-color: var(--eLightGreen);
-  border-radius: 20px;
+  border-radius: 0 20px 20px 0;
   color: black;
-  font-size: 15vmin;
-  font-stretch: expanded;
+  padding: 10px;
+  
 }
 
 .title h2 {
-  position: absolute;
-  left: 0%;
-  top: 120%;
-
-  padding: 20px;
   background-color: var(--eLightGreen);
-  border-radius: 20px;
+  border-radius: 0 20px 20px 0;
+
   font-size: 5vmin;
   color: black;
+  padding: 10px;
+  margin-top: 20px;
 }
 
 .ImageContainer {
-  position: absolute;
-  height: 80%;
-  width: 50%;
-  right: 0%;
-  top: 10%;
-  padding: 10px;
-
-  border-radius: 20px;
+  display: flex;
+  align-items: right;
+  justify-content: right;
+  flex: 1;
+  border-radius: 20px 0px 0px 20px;
   background-color: var(--eLightGreen);
+  padding: 10px;
+  padding-right: 0px;
+  height: 70vh;
 }
 
 .ImageContainer img {
-  position: absolute;
-  width: 90%;
-  height: 90%;
-  align-content: center;
+  width: 99%;
   object-fit: cover;
+  object-position: 50% 5%;
+  border-radius: 10px 0px 0px 10px;
 }
 
 nav {
   position: sticky;
-  overflow: hidden; /* Hide overflow */
-  background-color: #333; /* Dark background color */
+  overflow: hidden;
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 20px;
 }
 
-/* Style the navigation bar links */
 nav a {
-  float: left; /* Make sure that the links stay side-by-side */
-  display: block; /* Change the display to block, for responsive reasons (see below) */
-  color: white; /* White text color */
-  text-align: center; /* Center the text */
-  padding: 14px 20px; /* Add some padding */
-  text-decoration: none; /* Remove underline */
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
 }
 
-/* Right-aligned link */
-nav a.right {
-  float: right; /* Float a link to the right */
-}
-
-/* Change color on hover/mouse-over */
 nav a:hover {
-  background-color: #ddd; /* Grey background color */
-  color: black; /* Black text color */
+  background-color: #ddd;
+  color: black;
 }
 
-/* Stacks Nav bar when screen small */
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+  .title {
+    font-size: 8vmin;
+    text-align: left;
+    order: 1;
+  }
+  .ImageContainer {
+    width: 100%;
+    order: 2;
+    justify-content: center;
+  }
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
   nav a {
-    float: none;
     width: 100%;
   }
 }
