@@ -82,6 +82,78 @@ nav a:hover {
   color: black;
 }
 
+#about {
+  background-color: var(--eLightGreen);
+  padding-top: 5vi;
+}
+
+#meSection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-height: 60vh;
+  text-align: left;
+  gap: 5vh;
+}
+
+#metext {
+  max-width: 50vw;
+  min-width: 49vw;
+  margin-left: 2vw;
+  min-height: 50vh;
+
+  font-family: "Imprima";
+  line-height: 25px;
+}
+h3 {
+  font-size: x-large;
+  font-family: "Kalnia";
+}
+
+.otherimgcon {
+  display: flex;
+  align-items: right;
+  justify-content: right;
+  flex: 1;
+  border-radius: 20px 0px 0px 20px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  background-color: var(--eGreen);
+  padding: 20px;
+  padding-right: 0px;
+  height: 50vh;
+}
+.standimg {
+  width: 99%;
+  object-fit: cover;
+  object-position: 10% 5%;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.work {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-height: 60vh;
+  text-align: left;
+  gap: 5vh;
+  margin: 5vh;
+  padding: 3vmin;
+
+  background-color: var(--eLightGreen);
+  border-radius: 15px;
+}
+.text {
+  max-width: 50vw;
+  min-width: 49vw;
+  font-family: "Imprima";
+  line-height: 25px;
+}
+h4 {
+  font-size: larger;
+  font-family: "Kalnia";
+}
+
 @media screen and (max-width: 480px) {
   header {
     display: flex;
@@ -102,18 +174,18 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin: 0; /* Remove any margin that could disrupt centering */
+    margin: 0;
   }
   .title h1 {
     border-radius: 13px;
     width: 50%;
-    text-align: center; /* Ensures text is centered inside the h1 */
+    text-align: center;
   }
   .title h2 {
     font-size: 4vmin;
     width: 30%;
     border-radius: 13px;
-    text-align: center; /* Ensures text is centered inside the h2 */
+    text-align: center;
   }
   .ImageContainer {
     width: 100%;
@@ -130,5 +202,27 @@ nav a:hover {
   }
   nav a {
     width: 100%;
+  }
+
+  #meSection {
+    flex-direction: column;
+  }
+  #metext {
+    min-width: 90vw;
+    text-align: center;
+  }
+
+  .otherimgcon {
+    width: 97%;
+    border-radius: 13px;
+    order: 2;
+    justify-content: center;
+    align-items: right;
+    padding-right: 23px;
+    margin-bottom: 10px;
+    z-index: 100;
+  }
+  .standimg {
+    border-radius: 13px;
   }
 }
