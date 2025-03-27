@@ -13,7 +13,6 @@ header {
   background: #1c1a1d;
   color: white;
   gap: 20vh;
-
 }
 
 .title {
@@ -23,14 +22,12 @@ header {
   text-align: left;
   flex: 1;
   margin-left: 0;
-
 }
-.title h1{
+.title h1 {
   background-color: var(--eLightGreen);
   border-radius: 0 20px 20px 0;
   color: black;
   padding: 10px;
-  
 }
 
 .title h2 {
@@ -50,6 +47,7 @@ header {
   justify-content: right;
   flex: 1;
   border-radius: 20px 0px 0px 20px;
+  margin-bottom: 5px;
   background-color: var(--eLightGreen);
   padding: 10px;
   padding-right: 0px;
@@ -69,7 +67,7 @@ nav {
   background-color: #333;
   display: flex;
   justify-content: space-between;
-  padding: 14px 20px;
+  padding: 14px 10px;
 }
 
 nav a {
@@ -84,7 +82,7 @@ nav a:hover {
   color: black;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
   header {
     display: flex;
     flex-direction: column;
@@ -93,6 +91,7 @@ nav a:hover {
     text-align: center;
     gap: 5px;
     padding: 15px;
+    padding-bottom: 10px;
     height: 100vh; /* Ensures the header takes the full height of the screen */
   }
   .title {
@@ -122,6 +121,8 @@ nav a:hover {
     order: 2;
     justify-content: center;
     padding-right: 10px;
+    margin-bottom: 10px;
+    z-index: 100;
   }
   nav {
     flex-direction: column;
@@ -131,4 +132,3 @@ nav a:hover {
     width: 100%;
   }
 }
-
