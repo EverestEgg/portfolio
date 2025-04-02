@@ -2,6 +2,9 @@
   --eGreen: #07352c;
   --eLightGreen: #ddede6;
 }
+img{
+  object-fit: cover;
+}
 
 header {
   display: flex;
@@ -56,7 +59,6 @@ header {
 
 .ImageContainer img {
   width: 99%;
-  object-fit: cover;
   object-position: 50% 5%;
   border-radius: 10px 0px 0px 10px;
 }
@@ -84,50 +86,61 @@ nav a:hover {
 
 #about {
   background-color: var(--eLightGreen);
-  padding-top: 5vi;
+  padding-top: 1vh;
 }
 
 #meSection {
   display: flex;
   flex-direction: row;
-  align-items: center;
+
+  margin-top: 20px;
   min-height: 60vh;
   text-align: left;
-  gap: 5vh;
+  align-items: center;
+
 }
 
 #metext {
-  max-width: 50vw;
-  min-width: 49vw;
+  width: 50vw;
   margin-left: 2vw;
   min-height: 50vh;
 
   font-family: "Imprima";
   line-height: 25px;
+  font-size: large;
+
 }
 h3 {
-  font-size: x-large;
+  font-size: xx-large;
   font-family: "Kalnia";
 }
 
-.otherimgcon {
+#AboutImagecon{
+  background-color: var(--eGreen);
   display: flex;
   align-items: right;
   justify-content: right;
-  flex: 1;
   border-radius: 20px 0px 0px 20px;
   margin-bottom: 5px;
   margin-top: 5px;
-  background-color: var(--eGreen);
   padding: 20px;
   padding-right: 0px;
   height: 50vh;
-}
-.standimg {
-  width: 99%;
-  object-fit: cover;
   object-position: 10% 5%;
   border-radius: 10px 0px 0px 10px;
+}
+
+.standimg {
+  width: 99%;
+  object-position: 10% 5%;
+  border-radius: 10px 0px 0px 10px;
+}
+
+#worktitle{
+  position: relative;
+  top: 50px;
+  font-size: xxx-large;
+  left: 7vw;
 }
 
 .work {
@@ -136,23 +149,52 @@ h3 {
   align-items: center;
   min-height: 60vh;
   text-align: left;
-  gap: 5vh;
   margin: 5vh;
-  padding: 3vmin;
-
+  padding: 5vmin;
   background-color: var(--eLightGreen);
   border-radius: 15px;
 }
 .text {
   max-width: 50vw;
-  min-width: 49vw;
+  min-width: 40vw;
   font-family: "Imprima";
   line-height: 25px;
+  font-size: large;
+  margin-right: 10px;
 }
 h4 {
-  font-size: larger;
+  font-size: xx-large;
   font-family: "Kalnia";
 }
+
+.otherimgcon {
+  display: flex;
+  flex: 1;
+  border-radius: 20px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  background-color: #501717;
+  padding: 15px;
+  min-height: 40vh;
+  min-width: 30vw;
+}
+.otherimgcon img{
+  border-radius: 10px;
+}
+
+.arrow{
+  max-width: 40px;
+  min-width: 20px;
+  padding: 2px;
+}
+.imgblock{
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+}
+
+
+
 
 @media screen and (max-width: 480px) {
   header {
@@ -212,7 +254,7 @@ h4 {
     text-align: center;
   }
 
-  .otherimgcon {
+  #AboutImagecon{
     width: 97%;
     border-radius: 13px;
     order: 2;
@@ -224,5 +266,26 @@ h4 {
   }
   .standimg {
     border-radius: 13px;
+  }
+
+  .work{
+    flex-direction: column;
+    text-align: center;
+    margin: 1.5vh;
+  }
+  .text{
+    max-width: 80vw;
+    min-width: 40vw;
+    font-family: "Imprima";
+    line-height: 20px;
+    font-size: small;
+  }
+  .otherimgcon{
+    width: 80vw;
+  }
+  #worktitle{
+    text-align: center;
+    top: 0;
+    left: 0;
   }
 }
