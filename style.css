@@ -180,7 +180,7 @@ h4 {
   border-radius: 20px;
   margin-bottom: 5px;
   margin-top: 5px;
-  background-color: #501717;
+  background-color: #07352C;
   padding: 15px;
   min-height: 40vh;
   min-width: 30vw;
@@ -294,33 +294,43 @@ h4 {
     justify-content: center;
     align-content: center;
     text-align: center;
+    flex-grow: 10;
     margin: 1.5vh;
   }
   .text {
-    margin: 0;
+    min-width: 70vw;
+   justify-content: center;
+    align-content: center;
+    flex-grow: 10;
+    margin: auto;
     padding: 0;
     font-family: "Imprima";
-    font-size: x-small;
+    font-size: X-small;
     line-height: 15px;
   }
   .text p{
-
-    margin: auto;
+    align-self: center;
+    justify-self: center;
   }
   .text h4{
     line-height: normal;
   }
   .otherimgcon {
-    width: 90vw;
+    max-height: auto;
+    min-height: 31vh;
+    padding: 6px;
+    border-radius: 15px;
   }
   .otherimgcon img{
-    max-height: 20;
+    max-height: 30vh;
   }
 
   #worktitle {
     text-align: center;
-  
     top: 0;
     left: 0;
+  }
+  .arrow{
+    display: none
   }
 }
