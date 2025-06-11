@@ -2,7 +2,7 @@
   --eGreen: #07352c;
   --eLightGreen: #ddede6;
 }
-img{
+img {
   object-fit: cover;
 }
 
@@ -94,40 +94,47 @@ nav a:hover {
   flex-direction: row;
 
   margin-top: 20px;
-  min-height: 60vh;
+  min-height: 4%;
   text-align: left;
   align-items: center;
-
 }
 
 #metext {
-  width: 50vw;
-  margin-left: 2vw;
+  width: 60vw;
+  margin-left: 5vw;
   min-height: 50vh;
 
   font-family: "Imprima";
-  line-height: 25px;
-  font-size: large;
-
+  line-height: 4vh;
+  font-size: 3vh;
+  padding: 17px;
 }
+
 h3 {
-  font-size: xx-large;
+  font-size: 4.5vh;
   font-family: "Kalnia";
 }
 
-#AboutImagecon{
+#AboutImagecon {
   background-color: var(--eGreen);
-  display: flex;
+  float: right;
   align-items: right;
   justify-content: right;
+  margin-left: auto;
+  margin-right: 0;
+  right: 0%;
   border-radius: 20px 0px 0px 20px;
-  margin-bottom: 5px;
+  margin-bottom: 25px;
   margin-top: 5px;
   padding: 20px;
-  padding-right: 0px;
-  height: 50vh;
+
+  padding-right: 20px;
   object-position: 10% 5%;
   border-radius: 10px 0px 0px 10px;
+}
+#aboutimg{
+  max-height: 350px;
+ 
 }
 
 .standimg {
@@ -136,7 +143,7 @@ h3 {
   border-radius: 10px 0px 0px 10px;
 }
 
-#worktitle{
+#worktitle {
   position: relative;
   top: 50px;
   font-size: xxx-large;
@@ -178,25 +185,22 @@ h4 {
   min-height: 40vh;
   min-width: 30vw;
 }
-.otherimgcon img{
+.otherimgcon img {
   border-radius: 10px;
 }
 
-.arrow{
+.arrow {
   max-width: 40px;
   min-width: 20px;
   padding: 2px;
 }
-.imgblock{
+.imgblock {
   display: inline-flex;
   position: relative;
   align-items: center;
 }
 
-
-
-
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 800px) {
   header {
     display: flex;
     flex-direction: column;
@@ -248,43 +252,74 @@ h4 {
 
   #meSection {
     flex-direction: column;
+    min-height: none;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    justify-content: center;
+    margin-bottom: 25px;
   }
   #metext {
-    min-width: 90vw;
+    padding: 0;
+    margin: auto;
     text-align: center;
+    font-size: 2vh;
+    
+    line-height: 23px;
+    max-width: 95%;
+    padding: 10px;
   }
-
-  #AboutImagecon{
-    width: 97%;
+  #AboutImagecon {
+    width: 85%;
     border-radius: 13px;
-    order: 2;
-    justify-content: center;
-    align-items: right;
-    padding-right: 23px;
+    margin-top: 0;
     margin-bottom: 10px;
     z-index: 100;
+    margin: 0;
+    align-self: center;
   }
+  #aboutimg{
+    object-fit: cover;
+    max-height: none;
+    margin: 0;
+    padding: 0;
+  }
+
   .standimg {
     border-radius: 13px;
   }
 
-  .work{
+  .work {
     flex-direction: column;
+    justify-content: center;
+    align-content: center;
     text-align: center;
     margin: 1.5vh;
   }
-  .text{
-    max-width: 80vw;
-    min-width: 40vw;
+  .text {
+    margin: 0;
+    padding: 0;
     font-family: "Imprima";
-    line-height: 20px;
-    font-size: small;
+    font-size: x-small;
+    line-height: 15px;
   }
-  .otherimgcon{
-    width: 80vw;
+  .text p{
+
+    margin: auto;
   }
-  #worktitle{
+  .text h4{
+    line-height: normal;
+  }
+  .otherimgcon {
+    width: 90vw;
+  }
+  .otherimgcon img{
+    max-height: 20;
+  }
+
+  #worktitle {
     text-align: center;
+  
     top: 0;
     left: 0;
   }
